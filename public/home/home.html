@@ -1,0 +1,29 @@
+<form class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+    <div class="form-group">
+        <label for="vanOwner">Your Name</label>
+        <input type="text" class="form-control" id="vanOwner" placeholder="Captain Mal Reynolds" ng-model="van.vanOwner">
+
+        <label for="vanName">Your Van's name</label>
+        <input type="text" class="form-control" id="vanName" placeholder="Serenity" ng-model="van.vanName">
+
+        <input type="number" class="form-control" id="year" placeholder="Van Year" ng-model="van.year">
+
+        <input type="text" class="form-control" id="make" placeholder="Make" ng-model="van.make">
+
+        <input type="text" class="form-control" id="model" placeholder="Model" ng-model="van.model">
+
+        <input type="number" class="form-control" id="mileage" placeholder="Mileage" ng-model="van.mileage">
+
+        <input type="text" class="form-control" id="mechanicalMods" placeholder="Mechanical Mods" ng-model="van.mechanicalMods">
+
+        <input type="text" class="form-control" id="interiorMods" placeholder="Interior Mods" ng-model="van.interiorMods">
+
+        <input type="text" class="form-control" id="exteriorMods" placeholder="Exterior Mods" ng-model="van.exteriorMods">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputFile">Add a picture</label>
+        <input type="file" name="pic" id="exampleInputFile" placeholder="image">
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="save(van)">Submit</button>
+</form>

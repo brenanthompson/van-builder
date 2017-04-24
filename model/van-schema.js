@@ -15,7 +15,9 @@ var vanSchema = new Schema({
     mechanicalMods: [String],
     interiorMods: [String],
     exteriorMods: [String],
-    isRunning: Boolean,
+    pics: {
+        type: String
+    },
     comments: [String]
 });
 

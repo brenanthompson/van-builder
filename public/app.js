@@ -1,6 +1,18 @@
-var app = angular.module('vanBuilder', []);
+var app = angular.module('vanBuilder', ["ngRoute"]);
 
-app.controller("vanCtrl", function($scope){
+app.config(["$routeProvider", function ($routeProvider){
 
+    $routeProvider
 
-})
+        .when('/home',{
+            templateUrl: "home/home.html",
+
+            controller: "HomeController"
+        })
+
+        .otherwise({
+            redirectTo: "/home"
+        })
+
+}])
+
